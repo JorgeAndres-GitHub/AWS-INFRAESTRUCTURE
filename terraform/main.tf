@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "php_server" {
   ami           = "ami-08c40ec9ead489470" # Ubuntu 22.04 en us-east-1
   instance_type = "t3.micro"
-  key_name      = "terraform-key" # asegúrate de tener un par de llaves creado en AWS
+  key_name      = "terraform-key" 
 
   tags = {
     Name = "Servidor-PHP"
