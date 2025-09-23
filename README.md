@@ -29,8 +29,10 @@ El archivo .pem tambien debe estar dentro de WSL para que los ejecutables de ans
 Ejecutamos nuestro codigo de ansible:
 <img width="921" height="115" alt="image" src="https://github.com/user-attachments/assets/dddd3248-7052-4e6e-b2d3-870ce3b886fe" />
 <img width="921" height="199" alt="image" src="https://github.com/user-attachments/assets/0271ec6b-bf60-4daa-be59-51dbaab3aa5c" />
+
 Como se puede observar en la direccion Ip Publica de la maquina virtual ya se puede acceder al servidor de Nginx:
 <img width="921" height="464" alt="image" src="https://github.com/user-attachments/assets/7e79463f-83d1-4c4f-b1a5-7d9986e925b1" />
+
 Sin embargo, debemos configurar nginx para que muestre nuestro index.php:
 
 <img width="921" height="24" alt="image" src="https://github.com/user-attachments/assets/da23e915-e51e-4fc4-9618-a57dbf516d4a" />
