@@ -1,0 +1,27 @@
+- hosts: web
+  become: yes
+  tasks:
+    - name: Actualizar paquetes
+      apt:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Instalar Nginx y PHP
+      apt:
+        name:
+          - nginx
+          - php-fpm
+          - php-cli
+        state: present
+
+    - name: Copiar archivo PHP de prueba
+      copy:
+        src: ../php/index.php
+        dest: /var/www/html/index.php
+        mode: '0644'
+
+
+    - name: Reiniciar Nginx
+      service:
+        name: nginx
+        state: restarted

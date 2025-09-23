@@ -1,0 +1,65 @@
+# ===========================================
+# Archivos y carpetas generadas por Terraform
+# ===========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# ===========================================
+# Archivos sensibles de Terraform
+# ===========================================
+*.tfvars
+*.tfvars.json
+
+# ===========================================
+# Ansible
+# ===========================================
+*.retry
+ansible/inventory.yml
+
+# ===========================================
+# Archivos del sistema
+# ===========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================================
+# Archivos temporales
+# ===========================================
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+*.old
+
+# ===========================================
+# Ejecutables y binarios
+# ===========================================
+*.exe
+*.bin
+*.dll
+*.so
+
+# ===========================================
+# Archivos de IDEs / Editores
+# ===========================================
+.vscode/
+.idea/
+*.code-workspace
+
+# ===========================================
+# Archivos PHP/Nginx (solo archivos de configuración se mantienen)
+# ===========================================
+vendor/
+node_modules/
+.env
